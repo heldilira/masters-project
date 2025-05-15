@@ -1,0 +1,99 @@
+---
+title: "Tabela de Artigos com Sono/Insônia"
+author: "Helder Lira"
+date: "2025-05-14"
+image: "tbl.png"
+---
+
+```{r}
+#| label: knitr options
+#| echo: false
+knitr::opts_chunk$set(
+  results = 'asis',
+  echo = FALSE,
+  warning = FALSE,
+  tidy = FALSE,
+  message = FALSE,
+  fig.align = 'center',
+  out.width = "100%"
+)
+options(knitr.table.format = "html")
+```
+
+```{r}
+#| echo: false
+library(tidyverse)
+library(readxl)
+library(janitor)
+library(here)
+library(htmltools)
+library(reactable)
+```
+
+```{r}
+#| label: Propostas relacionadas a sono
+#| echo: false
+
+df <- read_excel(here("data/bhrc_proposals.xlsx"))
+
+#df |> names() # A tibble: 726 × 23
+
+df_aux <- df |> clean_names() |> drop_na(propid) # A tibble: 131 × 23
+
+pattern <- regex(
+  "\\b(?:sono|insonia|insônia|sleep|insomnia)\\b",
+  ignore_case = TRUE
+)
+```
+
+```{r}
+## 1. Flag rows that mention sleep
+df_sleep_rows <- df_aux |> 
+  mutate(
+    has_sleep = if_any(
+      where(is.character),
+      ~ str_detect(replace_na(.x, ""), pattern)
+    )
+  ) |> select(!contains("variable"))
+
+## 2. Identify columns 1, 2, 8 to last column
+hidden_cols <- df_sleep_rows |> 
+     select(1, 2, 8:last_col()) |>
+     names()
+
+hidden_defs  <- setNames(
+  rep(list(colDef(show = FALSE)), length(hidden_cols)),
+  hidden_cols
+)
+
+## 3. Subset to rows with matches (this is the data the grid will display)
+tbl <- df_sleep_rows |>
+     filter(has_sleep)
+
+## 4. Build the reactable
+reactable(
+  tbl,
+  columns   = hidden_defs,   # <- put the named list here
+  searchable = TRUE,
+
+  details = function(index) {
+    # use the SAME data frame (tbl) to avoid mis-alignment
+    row_details <- tbl[index, hidden_cols, drop = FALSE]
+
+    tags$div(
+      style = "
+        padding: 8px;
+        white-space: pre-wrap;
+        max-height: 300px;
+        overflow-y: auto;",
+      lapply(seq_along(row_details), function(i) {
+        tags$p(
+          tags$strong(names(row_details)[i], ": "),
+          as.character(row_details[[i]])
+        )
+      })
+    )
+  }
+)
+
+```
