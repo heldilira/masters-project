@@ -1,0 +1,6 @@
+/* tables.css ─ changes every table, header cell and body cell */
+table,
+table th,
+table td {
+  font-size: 12px !important;     /* pick any size you need */
+}
