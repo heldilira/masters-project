@@ -1,0 +1,106 @@
+---
+title: "Variáveis EMA "
+author: "Helder Lira"
+date: "2025-05-19"
+editor: source
+image: thumbnail.jpg
+---
+
+```{r}
+#| label: knitr options
+#| echo: false
+
+knitr::opts_chunk$set(
+  results = 'asis',
+  echo = FALSE,
+  warning = FALSE,
+  tidy = FALSE,
+  message = FALSE,
+  fig.align = 'center',
+  out.width = "100%"
+)
+```
+
+```{r}
+library(tidyverse)
+library(kableExtra)
+library(readxl)
+library(here)
+```
+
+# Identification
+
+```{r}
+```
+
+# Self-Report Evaluation (intensive)
+
+Daily for 28 days after clinical evaluation, 4 times a day
+
+```{r}
+self_report_evaluation <- read_excel(
+  here("data/ema_variables.xlsx"),
+  sheet = "self_report_evaluation")
+
+n_cols <- ncol(self_report_evaluation)
+
+self_report_evaluation |> 
+kbl(align  = rep("c", n_cols)) |>
+     column_spec(3,extra_css = "font-size: 12px; vertical-align: middle;") |>
+     column_spec(setdiff(1:n_cols, 3), extra_css = "vertical-align: middle;")
+```
+
+# Parent-Report Evaluation (intensive)
+
+Daily for 28 days after clinical evaluation, 2 times a day
+
+```{r}
+parent_report_evaluation <- read_excel(
+  here("data/ema_variables.xlsx"),
+  sheet = "parent_report_evaluation",
+)
+
+n_cols <- ncol(parent_report_evaluation)
+
+parent_report_evaluation |> 
+kbl(align  = rep("c", n_cols)) |>
+     column_spec(3,extra_css = "font-size: 12px; vertical-align: middle;") |>
+     column_spec(setdiff(1:n_cols, 3), extra_css = "vertical-align: middle;")
+```
+
+# Self-Report Evaluation (non-intensive)
+weekly for 1 year after intensive EMA 
+
+```{r}
+self_report_evaluation_weekly <- read_excel(
+  here("data/ema_variables.xlsx"),
+  sheet = "self_report_evaluation_weekly",
+)
+
+n_cols <- ncol(self_report_evaluation_weekly)
+
+
+self_report_evaluation_weekly |> 
+kbl(align  = rep("c", n_cols)) |>
+     column_spec(3,extra_css = "font-size: 12px; vertical-align: middle;") |>
+     column_spec(setdiff(1:n_cols, 3), extra_css = "vertical-align: middle;")
+```
+
+
+# Parent-Report Evaluation (non-intensive) 
+Every 35 days for 1 year after intensive EMA
+
+```{r}
+parent_report_evaluation_weekly <- read_excel(
+  here("data/ema_variables.xlsx"),
+  sheet = "parent_report_evaluation_weekly",
+)
+
+n_cols <- ncol(parent_report_evaluation_weekly)
+
+parent_report_evaluation_weekly |> 
+kbl(align  = rep("c", n_cols)) |>
+     column_spec(3,extra_css = "font-size: 12px; vertical-align: middle;") |>
+     column_spec(setdiff(1:n_cols, 3), extra_css = "vertical-align: middle;")
+```
+

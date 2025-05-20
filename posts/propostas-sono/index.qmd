@@ -49,32 +49,33 @@ pattern <- regex(
 
 ```{r}
 ## 1. Flag rows that mention sleep
-df_sleep_rows <- df_aux |> 
+df_sleep_rows <- df_aux |>
   mutate(
     has_sleep = if_any(
       where(is.character),
       ~ str_detect(replace_na(.x, ""), pattern)
     )
-  ) |> select(!contains("variable"))
+  ) |>
+  select(!contains("variable"))
 
 ## 2. Identify columns 1, 2, 8 to last column
-hidden_cols <- df_sleep_rows |> 
-     select(1, 2, 8:last_col()) |>
-     names()
+hidden_cols <- df_sleep_rows |>
+  select(1, 2, 8:last_col()) |>
+  names()
 
-hidden_defs  <- setNames(
+hidden_defs <- setNames(
   rep(list(colDef(show = FALSE)), length(hidden_cols)),
   hidden_cols
 )
 
 ## 3. Subset to rows with matches (this is the data the grid will display)
 tbl <- df_sleep_rows |>
-     filter(has_sleep == TRUE)
+  filter(has_sleep == TRUE)
 
 ## 4. Build the reactable
 reactable(
   tbl,
-  columns   = hidden_defs,   # <- put the named list here
+  columns = hidden_defs, # <- put the named list here
   searchable = TRUE,
 
   details = function(index) {
@@ -98,3 +99,4 @@ reactable(
 )
 
 ```
+
