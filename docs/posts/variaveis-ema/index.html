@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Helder Lira">
-<meta name="dcterms.date" content="2025-05-19">
+<meta name="dcterms.date" content="2025-05-20">
 
 <title>Projeto de Mestrado - Variáveis EMA</title>
 <style>
@@ -68,8 +68,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
-<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -135,7 +133,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">May 19, 2025</p>
+        <p class="date">May 20, 2025</p>
       </div>
     </div>
     
@@ -151,11 +149,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#identification" id="toc-identification" class="nav-link active" data-scroll-target="#identification">Identification</a></li>
-  <li><a href="#self-report-evaluation-intensive" id="toc-self-report-evaluation-intensive" class="nav-link" data-scroll-target="#self-report-evaluation-intensive">Self-Report Evaluation (intensive)</a></li>
-  <li><a href="#parent-report-evaluation-intensive" id="toc-parent-report-evaluation-intensive" class="nav-link" data-scroll-target="#parent-report-evaluation-intensive">Parent-Report Evaluation (intensive)</a></li>
-  <li><a href="#self-report-evaluation-non-intensive" id="toc-self-report-evaluation-non-intensive" class="nav-link" data-scroll-target="#self-report-evaluation-non-intensive">Self-Report Evaluation (non-intensive)</a></li>
-  <li><a href="#parent-report-evaluation-non-intensive" id="toc-parent-report-evaluation-non-intensive" class="nav-link" data-scroll-target="#parent-report-evaluation-non-intensive">Parent-Report Evaluation (non-intensive)</a></li>
+  <li><a href="#resumo" id="toc-resumo" class="nav-link active" data-scroll-target="#resumo">Resumo</a></li>
+  <li><a href="#variáveis-de-identificação-registradas-uma-única-vez" id="toc-variáveis-de-identificação-registradas-uma-única-vez" class="nav-link" data-scroll-target="#variáveis-de-identificação-registradas-uma-única-vez">Variáveis de Identificação (registradas uma única vez)</a></li>
+  <li><a href="#self-report-evaluation" id="toc-self-report-evaluation" class="nav-link" data-scroll-target="#self-report-evaluation">Self Report Evaluation</a></li>
+  <li><a href="#parent-report-evaluation-intensive" id="toc-parent-report-evaluation-intensive" class="nav-link" data-scroll-target="#parent-report-evaluation-intensive">Parent-Report Evaluation – Intensive</a></li>
+  <li><a href="#self-report-evaluation-non-intensive" id="toc-self-report-evaluation-non-intensive" class="nav-link" data-scroll-target="#self-report-evaluation-non-intensive">Self-Report Evaluation – Non-intensive</a></li>
+  <li><a href="#parent-report-evaluation-non-intensive" id="toc-parent-report-evaluation-non-intensive" class="nav-link" data-scroll-target="#parent-report-evaluation-non-intensive">Parent-Report Evaluation (Non-intensive)</a></li>
   </ul>
 </nav>
     </div>
@@ -166,669 +165,613 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="identification" class="level1">
-<h1>Identification</h1>
+<section id="resumo" class="level1">
+<h1>Resumo</h1>
+<p>This document contains a technical overview of the assessment protocol used in the High Risk Cohort (Salum et al., 2015). This cohort study follows a sample of 2511 youths (inclusion age range: 6-14y) with high risk for mental disorder incidence.</p>
+<p>The third assessment moment is ongoing, starting in 2018. Participants and parents or relatives were asked to install and interact with our in-house Electronic Momentary Assessment (EMA) software. This application conforms to ethical norms and its used was approved by national and regional ethical research committees, it also obeys privacy and user right policies enforced by Google and Apple distribution server stores.</p>
+<p>Our application gathers input through screen prompted self-report items. Users consent to every step of data collection.</p>
+<p>Our protocol measures human behavior using multiple targets, such as: sleep patterns and quality, self-reported behavior, subjective emotional perception, composition of environmental surroundings, average dislocation by step count and social media activity.</p>
 </section>
-<section id="self-report-evaluation-intensive" class="level1">
-<h1>Self-Report Evaluation (intensive)</h1>
-<p>Daily for 28 days after clinical evaluation, 4 times a day</p>
-<div class="cell" data-layout-align="center">
-<div>
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<section id="variáveis-de-identificação-registradas-uma-única-vez" class="level1">
+<h1>Variáveis de Identificação (registradas uma única vez)</h1>
+<table class="table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Variable Name</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Item</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Levels</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Answer format</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Example</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Prompt Frequency</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Period</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Time of day</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Construct</th>
+<th>Variável</th>
+<th>Descrição</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_sleep</td>
-<td style="text-align: center; vertical-align: middle;">Que horas você pegou no sono ontem à noite?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">23:00</td>
-<td style="text-align: center; vertical-align: middle;">1x a day.</td>
-<td style="text-align: center; vertical-align: middle;">morning</td>
-<td style="text-align: center; vertical-align: middle;">09:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td><strong>Subjectid</strong></td>
+<td>ID numérico do participante</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_wake</td>
-<td style="text-align: center; vertical-align: middle;">Que horas você acordou hoje pela manhã?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">08:00</td>
-<td style="text-align: center; vertical-align: middle;">1x a day</td>
-<td style="text-align: center; vertical-align: middle;">morning</td>
-<td style="text-align: center; vertical-align: middle;">09:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td><strong>EMA_name</strong></td>
+<td>Nome da criança/adolescente no app</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_quali</td>
-<td style="text-align: center; vertical-align: middle;">Como você classificaria a qualidade do seu sono?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito ruim, (2) Ruim, (3) Razoável, (4) Boa, (5) Muito boa</td>
-<td style="text-align: center; vertical-align: middle;">Likert (1-5):</td>
-<td style="text-align: center; vertical-align: middle;">(2) Ruim</td>
-<td style="text-align: center; vertical-align: middle;">1x a day</td>
-<td style="text-align: center; vertical-align: middle;">morning</td>
-<td style="text-align: center; vertical-align: middle;">09:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td><strong>EMA_mother</strong>, <strong>EMA_birth</strong></td>
+<td>Nome da mãe biológica e data de nascimento</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_alone</td>
-<td style="text-align: center; vertical-align: middle;">Você está sozinho ou com outras pessoas?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1)&nbsp;&nbsp; Sozinho, (2) Acompanhado</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Environment</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_natu1</td>
-<td style="text-align: center; vertical-align: middle;">Você está em um lugar aberto ou fechado neste momento?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Lugar aberto, (2) Lugar Fechado</td>
-<td style="text-align: center; vertical-align: middle;">Pseudocode for randomization* of daily question time</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Environment</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_natu2</td>
-<td style="text-align: center; vertical-align: middle;">Você está em contato com a natureza (exemplo: árvores, grama, etc.)?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1)&nbsp;&nbsp; Sim, (2) Não</td>
-<td style="text-align: center; vertical-align: middle;">Binary: Dichotomic: Integer</td>
-<td style="text-align: center; vertical-align: middle;">(1) Sim</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Environment</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_thumbs</td>
-<td style="text-align: center; vertical-align: middle;">Como você se sente neste momento...</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) 3 thumbs UP (cor verde), (2) 2 thumbs UP (cor verde), (3) 1 thumb UP (cor verde), (4) 1 thumb UP (verde) e 1 thumb DOWN (vermelho); (5) 1 thumb DOWN (cor vermelha), (6) 2 thumbs DOWN (cor vermelha) e (7) 3 thumbs DOWN (cor vermelha)</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">2 thumbs UP (cor verde)</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_mood1</td>
-<td style="text-align: center; vertical-align: middle;">Feliz vs. Triste</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito feliz, (2) Feliz, (3) Um pouco feliz, (4) Neutro, (5) Um pouco triste, (6) Triste, (7) Muito triste</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">Feliz</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_mood2</td>
-<td style="text-align: center; vertical-align: middle;">Relaxado vs. Ansioso</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito relaxado, (2) Relaxado, (3) Um pouco relaxado, (4) Neutro, (5) Um pouco ansioso, (6) Ansioso, (7) Muito ansioso</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">Relaxado</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_mood3</td>
-<td style="text-align: center; vertical-align: middle;">Desanimado vs. Animado</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito animado, (2) Animado, (3) Um pouco animado, (4) Neutro, (5) Um pouco desanimado, (6) Desanimado, (7) Muito Desanimado</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">Ativo</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_mood4</td>
-<td style="text-align: center; vertical-align: middle;">Energético vs. Cansado</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito energético, (2) Energético, (3) Um pouco energético, (4) Neutro, (5) Um pouco cansado, (6) Cansado, (7) Muito cansado</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">Energético</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
-</tr>
-<tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_int_mood5</td>
-<td style="text-align: center; vertical-align: middle;">Calmo vs. Irritado</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito calmo, (2) Calmo, (3) Um pouco calmo, (4) Neutro, (5) Um pouco irritado, (6) Irritado, (7) Muito irritado</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">Calmo</td>
-<td style="text-align: center; vertical-align: middle;">Random 4x dia + Morning</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
+<td><strong>EMA_resp</strong>, <strong>EMA_resp_other</strong></td>
+<td>Nome e grau de parentesco do responsável que responderá as rodadas dos pais</td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-</div>
+</section>
+<section id="self-report-evaluation" class="level1">
+<h1>Self Report Evaluation</h1>
+<p>As perguntas de Sono são feitas apenas uma vez por dia pela manhã. As outras são feitas por 28 dias (após avaliação clínica), 4 vezes por dia.</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Construct</th>
+<th>Variable Name</th>
+<th>item</th>
+<th>Levels</th>
+<th>Answer format</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sleep</td>
+<td>SEMA_int_sleep</td>
+<td>Que horas você pegou no sono ontem à noite?</td>
+<td>hh:mm ou Não sei</td>
+<td>Either Time or Missing data</td>
+</tr>
+<tr class="even">
+<td>Sleep</td>
+<td>SEMA_int_wake</td>
+<td>Que horas você acordou hoje pela manhã?</td>
+<td>hh:mm ou Não sei</td>
+<td>Either Time or Missing data</td>
+</tr>
+<tr class="odd">
+<td>Sleep</td>
+<td>SEMA_int_quali</td>
+<td>Como você classificaria a qualidade do seu sono?</td>
+<td>(1) Muito ruim, (2) Ruim, (3) Razoável, (4) Boa, (5) Muito boa</td>
+<td>Likert (1-5):</td>
+</tr>
+<tr class="even">
+<td>Environment</td>
+<td>SEMA_int_alone</td>
+<td>Você está sozinho ou com outras pessoas?</td>
+<td>(1) Sozinho, (2) Acompanhado</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Environment</td>
+<td>SEMA_int_natu1</td>
+<td>Você está em um lugar aberto ou fechado neste momento?</td>
+<td>(1) Lugar aberto, (2) Lugar Fechado</td>
+<td>Pseudocode for randomization* of daily question time</td>
+</tr>
+<tr class="even">
+<td>Environment</td>
+<td>SEMA_int_natu2</td>
+<td>Você está em contato com a natureza (exemplo: árvores, grama, etc.)?</td>
+<td>(1) Sim, (2) Não</td>
+<td>Binary: Dichotomic: Integer</td>
+</tr>
+<tr class="odd">
+<td>Mood</td>
+<td>SEMA_int_thumbs</td>
+<td>Como você se sente neste momento…</td>
+<td>(1) 3 thumbs UP (cor verde), (2) 2 thumbs UP (cor verde), (3) 1 thumb UP (cor verde), (4) 1 thumb UP (verde) e 1 thumb DOWN (vermelho); (5) 1 thumb DOWN (cor vermelha), (6) 2 thumbs DOWN (cor vermelha) e (7) 3 thumbs DOWN (cor vermelha)</td>
+<td>Bidirectional Likert (1-7) scale</td>
+</tr>
+<tr class="even">
+<td>Mood</td>
+<td>SEMA_int_mood1</td>
+<td>Feliz vs.&nbsp;Triste</td>
+<td>(1) Muito feliz, (2) Feliz, (3) Um pouco feliz, (4) Neutro, (5) Um pouco triste, (6) Triste, (7) Muito triste</td>
+<td>Bidirectional Likert (1-7) scale</td>
+</tr>
+<tr class="odd">
+<td>Mood</td>
+<td>SEMA_int_mood2</td>
+<td>Relaxado vs.&nbsp;Ansioso</td>
+<td>(1) Muito relaxado, (2) Relaxado, (3) Um pouco relaxado, (4) Neutro, (5) Um pouco ansioso, (6) Ansioso, (7) Muito ansioso</td>
+<td>Bidirectional Likert (1-7) scale</td>
+</tr>
+<tr class="even">
+<td>Mood</td>
+<td>SEMA_int_mood3</td>
+<td>Desanimado vs.&nbsp;Animado</td>
+<td>(1) Muito animado, (2) Animado, (3) Um pouco animado, (4) Neutro, (5) Um pouco desanimado, (6) Desanimado, (7) Muito Desanimado</td>
+<td>Bidirectional Likert (1-7) scale</td>
+</tr>
+<tr class="odd">
+<td>Mood</td>
+<td>SEMA_int_mood4</td>
+<td>Energético vs.&nbsp;Cansado</td>
+<td>(1) Muito energético, (2) Energético, (3) Um pouco energético, (4) Neutro, (5) Um pouco cansado, (6) Cansado, (7) Muito cansado</td>
+<td>Bidirectional Likert (1-7) scale</td>
+</tr>
+<tr class="even">
+<td>Mood</td>
+<td>SEMA_int_mood5</td>
+<td>Calmo vs.&nbsp;Irritado</td>
+<td>(1) Muito calmo, (2) Calmo, (3) Um pouco calmo, (4) Neutro, (5) Um pouco irritado, (6) Irritado, (7) Muito irritado</td>
+<td>Bidirectional Likert (1-7) scale</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="parent-report-evaluation-intensive" class="level1">
-<h1>Parent-Report Evaluation (intensive)</h1>
-<p>Daily for 28 days after clinical evaluation, 2 times a day</p>
-<div class="cell" data-layout-align="center">
-<div>
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<h1>Parent-Report Evaluation – Intensive</h1>
+<p>Diariamente por 28 dias após avaliação clínica (2x/dia). As variáveis são apresentadas em 4 Domínios principais do respondente em relação a criança/adolescente: Sono, “Contato”, “Emotional Behaviors” e “Conduct Behaviors”.</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Variable Name</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Item</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Levels</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Answer format</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Example</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Prompt Frequency</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">period</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Time of day</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Construct</th>
+<th>Construct</th>
+<th>Variable Name</th>
+<th>Item</th>
+<th>Levels</th>
+<th>Example</th>
+<th>period</th>
+<th>Time of day</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">EMA_int_sleep</td>
-<td style="text-align: center; vertical-align: middle;">Aproximadamente, que horas (EMA_name) pegou no sono ontem à noite?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">23:00</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">morning</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 09:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>EMA_int_sleep</td>
+<td>Aproximadamente, que horas (EMA_name) pegou no sono ontem à noite?</td>
+<td>hh:mm&nbsp; ou Não sei</td>
+<td>23:00</td>
+<td>morning</td>
+<td>09:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">EMA_int_wakeint</td>
-<td style="text-align: center; vertical-align: middle;">Aproximadamente, que horas (EMA_name) acordou hoje pela manhã?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não Sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">08:00</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">morning</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 09:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>EMA_int_wakeint</td>
+<td>Aproximadamente, que horas (EMA_name) acordou hoje pela manhã?</td>
+<td>hh:mm ou Não Sei</td>
+<td>08:00</td>
+<td>morning</td>
+<td>09:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">EMA_int_contato</td>
-<td style="text-align: center; vertical-align: middle;">Aproximadamente, quanto tempo você passou com (EMA_name) hoje?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">____ horas _____ minutos</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">1h 30 min</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
+<td></td>
+<td>EMA_int_contato</td>
+<td>Aproximadamente, quanto tempo você passou com (EMA_name) hoje?</td>
+<td>hh:mm</td>
+<td>1h 30 min</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_somatic</td>
-<td style="text-align: center; vertical-align: middle;">Ao longo do dia de hoje, (EMA_name)..Queixou-se de dor de cabeça, dor de barriga ou enjôo</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_int_somatic</td>
+<td>Ao longo do dia de hoje, (EMA_name)..Queixou-se de dor de cabeça, dor de barriga ou enjôo</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_worries</td>
-<td style="text-align: center; vertical-align: middle;">Teve muitas preocupações</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_int_worries</td>
+<td>Teve muitas preocupações</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_unhappy</td>
-<td style="text-align: center; vertical-align: middle;">Pareceu triste, desanimado, choroso</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_int_unhappy</td>
+<td>Pareceu triste, desanimado, choroso</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_clingy</td>
-<td style="text-align: center; vertical-align: middle;">Ficou inseguro e facilmente perdeu a confiança em si mesmo</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_int_clingy</td>
+<td>Ficou inseguro e facilmente perdeu a confiança em si mesmo</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_afraid</td>
-<td style="text-align: center; vertical-align: middle;">Teve muitos medos, assustou-se facilmente</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_int_afraid</td>
+<td>Teve muitos medos, assustou-se facilmente</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_tantrums</td>
-<td style="text-align: center; vertical-align: middle;">Teve acessos de raiva ou crises de birra</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_int_tantrums</td>
+<td>Teve acessos de raiva ou crises de birra</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_obeys</td>
-<td style="text-align: center; vertical-align: middle;">Foi obediente, fez o que os adultos lhe pediram</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_int_obeys</td>
+<td>Foi obediente, fez o que os adultos lhe pediram</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_fights</td>
-<td style="text-align: center; vertical-align: middle;">Brigou com outras crianças ou as amendrontou</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_int_fights</td>
+<td>Brigou com outras crianças ou as amendrontou</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_lies</td>
-<td style="text-align: center; vertical-align: middle;">Enganou ou mentiu</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_int_lies</td>
+<td>Enganou ou mentiu</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_int_steals</td>
-<td style="text-align: center; vertical-align: middle;">Roubou coisas de casa, da escola ou de outros lugares</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">2x/ dia</td>
-<td style="text-align: center; vertical-align: middle;">night</td>
-<td style="text-align: center; vertical-align: middle;">1899-12-31 21:00:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_int_steals</td>
+<td>Roubou coisas de casa, da escola ou de outros lugares</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Falso</td>
+<td>night</td>
+<td>21:00</td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-</div>
 </section>
 <section id="self-report-evaluation-non-intensive" class="level1">
-<h1>Self-Report Evaluation (non-intensive)</h1>
-<p>weekly for 1 year after intensive EMA</p>
-<div class="cell" data-layout-align="center">
-<div>
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<h1>Self-Report Evaluation – Non-intensive</h1>
+<p>Semanalmente por 1 ano (após o EMA intensivo).</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Variable Name</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Item</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Levels</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Answer format</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Example</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Prompt Frequency</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Time of day</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Construct</th>
+<th>Construct</th>
+<th>Variable Name</th>
+<th>Item</th>
+<th>Levels</th>
+<th>Answer format</th>
+<th>Example</th>
+<th>Time of day</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_thumbs</td>
-<td style="text-align: center; vertical-align: middle;">Como você se sente neste momento...</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) 3 thumbs UP (cor verde), (2) 2 thumbs UP (cor verde), (3) 1 thumb UP (cor verde), (4) 1 thumb UP (verde) e 1 thumb DOWN (vermelho), (5) 1 thumb DOWN (cor vermelha), (6) 2 thumbs DOWN (cor vermelha), (7) 3 thumbs DOWN (cor vermelha)</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-7) scale</td>
-<td style="text-align: center; vertical-align: middle;">2 thumbs UP (cor verde)</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">Mood</td>
+<td>Mood</td>
+<td>SEMA_thumbs</td>
+<td>Como você se sente neste momento…</td>
+<td>(1) 3 thumbs UP (cor verde), (2) 2 thumbs UP (cor verde), (3) 1 thumb UP (cor verde), (4) 1 thumb UP (verde) e 1 thumb DOWN (vermelho), (5) 1 thumb DOWN (cor vermelha), (6) 2 thumbs DOWN (cor vermelha), (7) 3 thumbs DOWN (cor vermelha)</td>
+<td>Bidirectional Likert (1-7) scale</td>
+<td>2 thumbs UP (cor verde)</td>
+<td></td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_sleep</td>
-<td style="text-align: center; vertical-align: middle;">EM MÉDIA, que horas você pegou no sono na maioria dos dias dessa última semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não Sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">21:00</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>SEMA_sleep</td>
+<td>EM MÉDIA, que horas você pegou no sono na maioria dos dias dessa última semana?</td>
+<td>hh:mm ou Não Sei</td>
+<td>Either Time or Missing data</td>
+<td>21:00</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_wake</td>
-<td style="text-align: center; vertical-align: middle;">EM MÉDIA, que horas você acordou na maioria dos dias dessa última semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não Sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">08:00</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>SEMA_wake</td>
+<td>EM MÉDIA, que horas você acordou na maioria dos dias dessa última semana?</td>
+<td>hh:mm ou Não Sei</td>
+<td>Either Time or Missing data</td>
+<td>08:00</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SEMA_quali</td>
-<td style="text-align: center; vertical-align: middle;">Como você classificaria a qualidade do seu sono nessa última semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Muito ruim, (2) Ruim, (3) Razoável, (4) Boa, (5) Muito boa</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-5) scale</td>
-<td style="text-align: center; vertical-align: middle;">Ruim</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>SEMA_quali</td>
+<td>Como você classificaria a qualidade do seu sono nessa última semana?</td>
+<td>(1) Muito ruim, (2) Ruim, (3) Razoável, (4) Boa, (5) Muito boa</td>
+<td>Bidirectional Likert (1-5) scale</td>
+<td>Ruim</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SEMA_natu</td>
-<td style="text-align: center; vertical-align: middle;">Quantos dias você ficou em contato com a natureza (exemplo: árvores, grama, etc.) nessa última semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Nenhum dia, (2) 1 dia, (3) 2 dias, (4) 3 dias, (5) 4 dias, (6) 5 dias, (7) 6 dias, (8) Todos os dias</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-5) scale</td>
-<td style="text-align: center; vertical-align: middle;">(1) nenhum dia</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Enviroment</td>
+<td>Enviroment</td>
+<td>SEMA_natu</td>
+<td>Quantos dias você ficou em contato com a natureza (exemplo: árvores, grama, etc.) nessa última semana?</td>
+<td>(1) Nenhum dia, (2) 1 dia, (3) 2 dias, (4) 3 dias, (5) 4 dias, (6) 5 dias, (7) 6 dias, (8) Todos os dias</td>
+<td>Bidirectional Likert (1-5) scale</td>
+<td>(1) nenhum dia</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SSDQ_somatic</td>
-<td style="text-align: center; vertical-align: middle;">Ao longo dessa última semana...Tive dor de cabeça, dor de barriga ou enjôo</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SSDQ_somatic</td>
+<td>Ao longo dessa última semana…Tive dor de cabeça, dor de barriga ou enjôo</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SSDQ_worries</td>
-<td style="text-align: center; vertical-align: middle;">Tive muitas preocupações</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SSDQ_worries</td>
+<td>Tive muitas preocupações</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SSDQ_unhappy</td>
-<td style="text-align: center; vertical-align: middle;">Estava triste, desanimado, choroso</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SSDQ_unhappy</td>
+<td>Estava triste, desanimado, choroso</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SSDQ_clingy</td>
-<td style="text-align: center; vertical-align: middle;">Fiquei inseguro e facilmente perdi a confiança em mim</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SSDQ_clingy</td>
+<td>Fiquei inseguro e facilmente perdi a confiança em mim</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SSDQ_afraid</td>
-<td style="text-align: center; vertical-align: middle;">Tive muitos medos, assustei-me facilmente</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SSDQ_afraid</td>
+<td>Tive muitos medos, assustei-me facilmente</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SSDQ_tantrums</td>
-<td style="text-align: center; vertical-align: middle;">Tive acessos de raiva ou crises de birra</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SSDQ_tantrums</td>
+<td>Tive acessos de raiva ou crises de birra</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SSDQ_obeys</td>
-<td style="text-align: center; vertical-align: middle;">Fui obediente, fiz tudo o que os adultos me pediram</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SSDQ_obeys</td>
+<td>Fui obediente, fiz tudo o que os adultos me pediram</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SSDQ_fights</td>
-<td style="text-align: center; vertical-align: middle;">Briguei com outras crianças ou as amendrontei</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SSDQ_fights</td>
+<td>Briguei com outras crianças ou as amendrontei</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SSDQ_lies</td>
-<td style="text-align: center; vertical-align: middle;">Enganei ou menti</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SSDQ_lies</td>
+<td>Enganei ou menti</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SSDQ_steals</td>
-<td style="text-align: center; vertical-align: middle;">Roubei coisas de casa, da escola ou de outros lugares</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">1x/ Semana</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SSDQ_steals</td>
+<td>Roubei coisas de casa, da escola ou de outros lugares</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-</div>
 </section>
 <section id="parent-report-evaluation-non-intensive" class="level1">
-<h1>Parent-Report Evaluation (non-intensive)</h1>
-<p>Every 35 days for 1 year after intensive EMA</p>
-<div class="cell" data-layout-align="center">
-<div>
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
+<h1>Parent-Report Evaluation (Non-intensive)</h1>
+<p>A cada 35 dias por um ano (após EMA intensivo).</p>
+<table class="table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;" data-quarto-table-cell-role="th">Variable Name</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Item</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Levels</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Answer format</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Example</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Prompt Frequency</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Time of day</th>
-<th style="text-align: center;" data-quarto-table-cell-role="th">Construct</th>
+<th>Construct</th>
+<th>Variable Name</th>
+<th>Item</th>
+<th>Levels</th>
+<th>Answer format</th>
+<th>Example</th>
+<th>Time of day</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">EMA_sleep</td>
-<td style="text-align: center; vertical-align: middle;">EM MÉDIA, que horas (EMA_name) pegou no sono na maioria dos dias dessa semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não Sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">21:00</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>EMA_sleep</td>
+<td>EM MÉDIA, que horas (EMA_name) pegou no sono na maioria dos dias dessa semana?</td>
+<td>hh:mm ou Não Sei</td>
+<td>Either Time or Missing data</td>
+<td>21:00</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">EMA_wake</td>
-<td style="text-align: center; vertical-align: middle;">EM MÉDIA, que horas (EMA_name) acordou na maioria dos dias dessa semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">___:___ ou Não Sei</td>
-<td style="text-align: center; vertical-align: middle;">Either Time or Missing data</td>
-<td style="text-align: center; vertical-align: middle;">08:00</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>EMA_wake</td>
+<td>EM MÉDIA, que horas (EMA_name) acordou na maioria dos dias dessa semana?</td>
+<td>hh:mm ou Não Sei</td>
+<td>Either Time or Missing data</td>
+<td>08:00</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">EMA_contato</td>
-<td style="text-align: center; vertical-align: middle;">Quanto tempo você passou com (EMA_name) nessa semana?</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Nenhum dia, (2) 1 dia, (3) 2 dias, (4) 3 dias, (5) 4 dias, (6) 5 dias, (7) 6 dias, (8) Todos os dias</td>
-<td style="text-align: center; vertical-align: middle;">Ordered factor [1…6,6+]</td>
-<td style="text-align: center; vertical-align: middle;">(1) nenhum dia</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Sleep</td>
+<td>Sleep</td>
+<td>EMA_contato</td>
+<td>Quanto tempo você passou com (EMA_name) nessa semana?</td>
+<td>(1) Nenhum dia, (2) 1 dia, (3) 2 dias, (4) 3 dias, (5) 4 dias, (6) 5 dias, (7) 6 dias, (8) Todos os dias</td>
+<td>Ordered factor [1…6,6+]</td>
+<td>(1) nenhum dia</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_somatic</td>
-<td style="text-align: center; vertical-align: middle;">Ao longo dessa semana (EMA_name Queixou-se de dor de cabeça, dor de barriga ou enjôo</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_somatic</td>
+<td>Ao longo dessa semana (EMA_name Queixou-se de dor de cabeça, dor de barriga ou enjôo</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_worries</td>
-<td style="text-align: center; vertical-align: middle;">Teve muitas preocupações</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_worries</td>
+<td>Teve muitas preocupações</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_unhappy</td>
-<td style="text-align: center; vertical-align: middle;">Pareceu triste, desanimado, choroso</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_unhappy</td>
+<td>Pareceu triste, desanimado, choroso</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_clingy</td>
-<td style="text-align: center; vertical-align: middle;">Ficou inseguro e facilmente perdeu a confiança em si mesmo</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_clingy</td>
+<td>Ficou inseguro e facilmente perdeu a confiança em si mesmo</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_afraid</td>
-<td style="text-align: center; vertical-align: middle;">Teve muitos medos, assustou-se facilmente</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Emotional behaviors</td>
+<td>Emotional behaviors</td>
+<td>SDQ_afraid</td>
+<td>Teve muitos medos, assustou-se facilmente</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_tantrums</td>
-<td style="text-align: center; vertical-align: middle;">Teve acessos de raiva ou crises de birra</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_tantrums</td>
+<td>Teve acessos de raiva ou crises de birra</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_obeys</td>
-<td style="text-align: center; vertical-align: middle;">Foi obediente, fez o que os adultos lhe pediram</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_obeys</td>
+<td>Foi obediente, fez o que os adultos lhe pediram</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_fights</td>
-<td style="text-align: center; vertical-align: middle;">Brigou com outras crianças ou as amendrontou</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_fights</td>
+<td>Brigou com outras crianças ou as amendrontou</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="even">
-<td style="text-align: center; vertical-align: middle;">SDQ_lies</td>
-<td style="text-align: center; vertical-align: middle;">Enganou ou mentiu</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_lies</td>
+<td>Enganou ou mentiu</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center; vertical-align: middle;">SDQ_steals</td>
-<td style="text-align: center; vertical-align: middle;">Roubou coisas de casa, da escola ou de outros lugares</td>
-<td style="text-align: center; font-size: 12px; vertical-align: middle;">(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
-<td style="text-align: center; vertical-align: middle;">Bidirectional Likert (1-3) scale</td>
-<td style="text-align: center; vertical-align: middle;">Falso</td>
-<td style="text-align: center; vertical-align: middle;">NA</td>
-<td style="text-align: center; vertical-align: middle;">18:00</td>
-<td style="text-align: center; vertical-align: middle;">Conduct behaviors</td>
+<td>Conduct behaviors</td>
+<td>SDQ_steals</td>
+<td>Roubou coisas de casa, da escola ou de outros lugares</td>
+<td>(1) Falso, (2) Mais ou menos verdadeiro, (3) Verdadeiro</td>
+<td>Bidirectional Likert (1-3) scale</td>
+<td>Falso</td>
+<td>18:00</td>
 </tr>
 </tbody>
 </table>
-
-
-</div>
-</div>
 
 
 </section>

@@ -23,8 +23,8 @@ knitr::opts_chunk$set(
 options(knitr.table.format = "html")
 ```
 
-
 # Resumo
+
 This document contains a technical overview of the assessment protocol used in the High Risk Cohort (Salum et al., 2015). This cohort study follows a sample of 2511 youths (inclusion age range: 6-14y) with high risk for mental disorder incidence.
 
 The third assessment moment is ongoing, starting in 2018. Participants and parents or relatives were asked to install and interact with our in-house Electronic Momentary Assessment (EMA) software. This application conforms to ethical norms and its used was approved by national and regional ethical research committees, it also obeys privacy and user right policies enforced by Google and Apple distribution server stores.
@@ -36,7 +36,7 @@ Our protocol measures human behavior using multiple targets, such as: sleep patt
 # Variáveis de Identificação (registradas uma única vez)
 
 | Variável | Descrição |
-|------------------------------------|------------------------------------|
+|----|----|
 | **Subjectid** | ID numérico do participante |
 | **EMA_name** | Nome da criança/adolescente no app |
 | **EMA_mother**, **EMA_birth** | Nome da mãe biológica e data de nascimento |
@@ -47,7 +47,7 @@ Our protocol measures human behavior using multiple targets, such as: sleep patt
 As perguntas de Sono são feitas apenas uma vez por dia pela manhã. As outras são feitas por 28 dias (após avaliação clínica), 4 vezes por dia.
 
 | Construct | Variable Name | item | Levels | Answer format |
-|----------|----------|----------|----------------------------------|----------|
+|----|----|----|----|----|
 | Sleep | SEMA_int_sleep | Que horas você pegou no sono ontem à noite? | hh:mm ou Não sei | Either Time or Missing data |
 | Sleep | SEMA_int_wake | Que horas você acordou hoje pela manhã? | hh:mm ou Não sei | Either Time or Missing data |
 | Sleep | SEMA_int_quali | Como você classificaria a qualidade do seu sono? | \(1\) Muito ruim, (2) Ruim, (3) Razoável, (4) Boa, (5) Muito boa | Likert (1-5): |
@@ -67,7 +67,7 @@ As perguntas de Sono são feitas apenas uma vez por dia pela manhã. As outras s
 Diariamente por 28 dias após avaliação clínica (2x/dia). As variáveis são apresentadas em 4 Domínios principais do respondente em relação a criança/adolescente: Sono, "Contato", "Emotional Behaviors" e "Conduct Behaviors".
 
 | Construct | Variable Name | Item | Levels | Example | period | Time of day |
-|---------|---------|--------------------|----------|---------|---------|---------|
+|----|----|----|----|----|----|----|
 | Sleep | EMA_int_sleep | Aproximadamente, que horas (EMA_name) pegou no sono ontem à noite? | hh:mm  ou Não sei | 23:00 | morning | 09:00 |
 | Sleep | EMA_int_wakeint | Aproximadamente, que horas (EMA_name) acordou hoje pela manhã? | hh:mm ou Não Sei | 08:00 | morning | 09:00 |
 |  | EMA_int_contato | Aproximadamente, quanto tempo você passou com (EMA_name) hoje? | hh:mm | 1h 30 min | night | 21:00 |
@@ -87,7 +87,7 @@ Diariamente por 28 dias após avaliação clínica (2x/dia). As variáveis são 
 Semanalmente por 1 ano (após o EMA intensivo).
 
 | Construct | Variable Name | Item | Levels | Answer format | Example | Time of day |
-|--------|--------|--------|---------------------------|--------|--------|--------|
+|----|----|----|----|----|----|----|
 | Mood | SEMA_thumbs | Como você se sente neste momento... | \(1\) 3 thumbs UP (cor verde), (2) 2 thumbs UP (cor verde), (3) 1 thumb UP (cor verde), (4) 1 thumb UP (verde) e 1 thumb DOWN (vermelho), (5) 1 thumb DOWN (cor vermelha), (6) 2 thumbs DOWN (cor vermelha), (7) 3 thumbs DOWN (cor vermelha) | Bidirectional Likert (1-7) scale | 2 thumbs UP (cor verde) |  |
 | Sleep | SEMA_sleep | EM MÉDIA, que horas você pegou no sono na maioria dos dias dessa última semana? | hh:mm ou Não Sei | Either Time or Missing data | 21:00 | 18:00 |
 | Sleep | SEMA_wake | EM MÉDIA, que horas você acordou na maioria dos dias dessa última semana? | hh:mm ou Não Sei | Either Time or Missing data | 08:00 | 18:00 |
@@ -109,7 +109,7 @@ Semanalmente por 1 ano (após o EMA intensivo).
 A cada 35 dias por um ano (após EMA intensivo).
 
 | Construct | Variable Name | Item | Levels | Answer format | Example | Time of day |
-|---------|---------|------------|-----------------|---------|---------|---------|
+|----|----|----|----|----|----|----|
 | Sleep | EMA_sleep | EM MÉDIA, que horas (EMA_name) pegou no sono na maioria dos dias dessa semana? | hh:mm ou Não Sei | Either Time or Missing data | 21:00 | 18:00 |
 | Sleep | EMA_wake | EM MÉDIA, que horas (EMA_name) acordou na maioria dos dias dessa semana? | hh:mm ou Não Sei | Either Time or Missing data | 08:00 | 18:00 |
 | Sleep | EMA_contato | Quanto tempo você passou com (EMA_name) nessa semana? | \(1\) Nenhum dia, (2) 1 dia, (3) 2 dias, (4) 3 dias, (5) 4 dias, (6) 5 dias, (7) 6 dias, (8) Todos os dias | Ordered factor \[1…6,6+\] | \(1\) nenhum dia | 18:00 |
